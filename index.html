@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Display Div -->
+        <div id="display_div"></div>
+
+        <!-- Calculator Container -->
+        <div id="calc_container">
+            <button class="calc-btn" onclick="number('1')">1</button>
+            <button class="calc-btn" onclick="number('2')">2</button>
+            <button class="calc-btn" onclick="number('3')">3</button>
+            <button class="calc-btn" onclick="operate('+')">+</button>
+            <button class="calc-btn" onclick="number('4')">4</button>
+            <button class="calc-btn" onclick="number('5')">5</button>
+            <button class="calc-btn" onclick="number('6')">6</button>
+            <button class="calc-btn" onclick="operate('-')">-</button>
+            <button class="calc-btn" onclick="number('7')">7</button>
+            <button class="calc-btn" onclick="number('8')">8</button>
+            <button class="calc-btn" onclick="number('9')">9</button>
+            <button class="calc-btn" onclick="operate('*')">×</button>
+            <button class="calc-btn" onclick="updateDisplay('')">C</button>
+            <button class="calc-btn" onclick="number('0')">0</button>
+            <button class="calc-btn" onclick="calculate('=')">=</button>
+            <button class="calc-btn" onclick="operate('/')">/</button>
+        </div>
+
+        <!-- Image Banner -->
+        <div id="img_banner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

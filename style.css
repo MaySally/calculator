@@ -1,0 +1,83 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box; /* Ensure padding and border are included in width calculations */
+}
+
+/* Container for the calculator and the other elements */
+.container {
+    width: 100%;                  /* Make the container full width of the body */
+    max-width: 350px;             /* Set max width for the entire container */
+    margin: 0 auto;               /* Center it horizontally */
+    box-sizing: border-box;       /* Include padding and borders in width calculation */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+    padding: 20px;                      /* Padding inside the container */
+    border: 2px solid #888;             /* Slightly thicker border */
+    border-radius: 15px;                /* Rounded corners */
+    background-color: #fff;             /* Background color */
+}
+
+/* Calculator container (buttons) styling */
+#calc_container {
+    display: flex;                  /* Use Flexbox */
+    flex-wrap: wrap;                /* Allow items to wrap into new rows */
+    justify-content: space-between; /* Distribute buttons evenly */
+    gap: 5px;                       /* Reduced space between buttons */
+    width: 100%;                    /* Full width of parent container */
+    padding: 5px;                   /* Reduced padding inside the container */
+    box-sizing: border-box;         /* Include padding in width calculation */
+    border: 2px solid #888;            /* Slightly heavier gray border */
+    border-radius: 15px;    
+}
+
+/* Display div styling */
+#display_div {
+    width: 100%;                     /* Make it take the full width of #calc_container */
+    margin: 10px 0;                  /* Reduced margin for more compact layout */
+    padding: 10px;                   /* Reduced padding for display */
+    border: 2px solid #888;         /* Slightly heavier gray border */
+    border-radius: 15px;            /* Rounded corners */
+    background-color: #f4f4f4;
+    font-size: 1.5rem;               /* Smaller font size for the display */
+    text-align: center;
+    min-height: 50px;
+    box-sizing: border-box;          /* Include padding in width calculation */
+}
+
+/* Button styling inside the calculator container */
+.calc-btn {
+    flex: 1 1 22%;                  /* Flex-grow, flex-shrink, and basis for button size */
+    padding: 15px;                  /* Reduced padding inside the buttons */
+    font-size: 18px;                /* Smaller font size for the button text */
+    background-color: #f0f0f0;      /* Light background color */
+    border: 1px solid #ddd;         /* Button border */
+    border-radius: 5px;             /* Rounded corners */
+    cursor: pointer;                /* Cursor pointer on hover */
+    transition: background-color 0.3s; /* Smooth background change on hover */
+}
+
+.calc-btn:hover {
+    background-color: #dcdcdc;
+}
+
+.calc-btn:active {
+    background-color: #bcbcbc;
+}
+
+/* Image banner styling */
+#img_banner {
+    width: 100%;                     /* Make it take the full width of #calc_container */
+    height: 150px;                   /* Reduced height for the banner */
+    background-size: contain;       /* Shrinks image to fit */
+    background-repeat: no-repeat;   /* Prevent image from repeating */
+    background-position: center;    /* Center the image */
+    border: 2px solid #888;         /* Slightly heavier gray border */
+    border-radius: 15px;            /* Rounded corners */
+    margin-top: 10px;                /* Reduced margin for banner */
+    box-sizing: border-box;         /* Include padding and borders in width calculation */
+}
